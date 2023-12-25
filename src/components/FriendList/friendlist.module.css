@@ -1,0 +1,36 @@
+.friendlist {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 100px;
+
+  padding: 0px;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 10px;
+  background-color: white;
+}
+.name {
+  display: flex;
+}
+.active {
+  background: #1af806;
+  margin: 12px 0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+.nonactive {
+  background: #ff0000;
+  margin: 12px 0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+}

@@ -1,10 +1,10 @@
-import './statistics.css';
+import styles from "./statistics.module.css"
 
 export const StatList = ({ label, percentage }) => {
   return (
-    <li className="item">
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+    <li className={styles.item}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}</span>
     </li>
   );
 };

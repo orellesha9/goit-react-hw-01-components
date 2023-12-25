@@ -1,5 +1,5 @@
-import './statistics.css';
 import { StatList } from './StatList';
+import styles from "./statistics.module.css"
 
 export const Statistics = ({ title, stats = [] }) => {
   const elements = stats.map(item => (
@@ -11,9 +11,9 @@ export const Statistics = ({ title, stats = [] }) => {
   ));
   
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">{elements}</ul>
+    <section className={styles.statistics}>
+      {title && <h2 className={styles.title}>{title}</h2>}
+      <ul className={styles.statlist}>{elements}</ul>
     </section>
   );
 };
